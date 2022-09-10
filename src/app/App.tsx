@@ -1,12 +1,13 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, SafeAreaView } from "react-native";
+import Bets from "../features/bets/Bets";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Create tabs</Text>
+    <SafeAreaView style={styles.container}>
+      <Bets />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
